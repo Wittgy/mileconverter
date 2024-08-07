@@ -13,6 +13,13 @@ body {
     font-family: "Oswald", sans-serif;
 }
 
+.footnote {
+  font-size: 0.8em;
+  color: gray;
+  display: inline-block;
+  margin-left: 5px;
+}
+
 .container-top {
     background-color: burlywood;
     width: 70%;
