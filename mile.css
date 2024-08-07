@@ -2,19 +2,18 @@
 
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-family: "Oswald", sans-serif;
-    
-  }
-  
-  .container-top {
+}
+
+.container-top {
     background-color: burlywood;
     width: 70%;
     height: 40%;
@@ -22,36 +21,35 @@
     align-content: center;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-  }
-  
-  .container-bottom {
+}
+
+.container-bottom {
     background-color: #AABCCC;
     width: 70%;
     height: 15%;
-    display: flex; 
+    display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     text-align: center;
-  }
-  
-  .container-bottom p {
+}
+
+.container-bottom p {
     color: black;
     font-weight: 600;
     font-size: large;
-  }
-  
-  .container-top p {
+}
+
+.container-top p {
     font-weight: 600;
     font-size: larger;
-  }
+}
 
-  /* CSS kodu */
+/* CSS kodu */
 #distance {
-    border: 2px solid #643a15; 
-    padding: 10px;          
-    font-size: 18px;        
+    border: 2px solid #643a15;
+    padding: 10px;
+    font-size: 18px;
     outline: none;
-    font-size: larger;
     font-weight: 800;
     width: 120px;
     height: 45px;
@@ -60,138 +58,150 @@
 }
 
 #distance::placeholder {
-    color: gray;             
-    font-size: 18px;         
-    font-style: italic;      
+    color: gray;
+    font-size: 18px;
+    font-style: italic;
     text-align: center;
-    
 }
 
-
 #convert input[type="submit"] {
-    background-color: #5e3e22;; 
-    color: white;              
-    border: none;              
-    padding: 10px 20px;        
-    text-align: center;        
-    text-decoration: none;     
-    display: inline-block;     
-    font-size: 16px;           
-    font-weight: bold;         
-    border-radius: 5px;        
-    transition: background-color 0.3s, transform 0.2s; 
-    cursor: pointer;           
+    background-color: #5e3e22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
     height: 45px;
     width: 120px;
 }
 
 #convert input[type="submit"]:hover {
-    background-color: #855d3b; 
+    background-color: #855d3b;
 }
 
 #convert input[type="submit"]:active {
-    transform: scale(0.95);    
+    transform: scale(0.95);
 }
-
-
 
 form {
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    gap: 10px; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 #answerP {
-  letter-spacing: 1.5px;
+    letter-spacing: 1.5px;
 }
 
 /* Responsive dizayn kısmı */
 
 @media (max-width: 768px) {
-  .container-top, .container-bottom {
-      width: 90%;
-      padding: 15px;
-  }
+    .container-top, .container-bottom {
+        width: 90%;
+        padding: 15px;
+    }
 
-  #distance, #convert input[type="submit"] {
-      width: 100%;
-      font-size: 16px;
-  }
+    #distance, #convert input[type="submit"] {
+        width: 100%;
+        font-size: 16px;
+    }
 
-  form {
-      flex-direction: column;
-      gap: 15px;
-  }
+    form {
+        flex-direction: column;
+        gap: 45px;
+    }
 
-  .container-bottom p {
-      font-size: medium;
-  }
+    .container-bottom p {
+        font-size: medium;
+    }
 
-  .container-top p {
-      font-size: large;
-  }
+    .container-top p {
+        font-size: large;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    #designword {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 480px) {
-  .container-top, .container-bottom {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 25px;
-  }
+    .container-top, .container-bottom {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 25px;
+    }
 
-  #distance, #convert input[type="submit"] {
-      width: 100%;
-      font-size: 14px;
-      height: 40px;
-  }
+    #distance, #convert input[type="submit"] {
+        font-size: 14px;
+        height: 40px;
+    }
 
-  form {
-      flex-direction: column;
-      
-  }
+    .container-bottom p {
+        font-size: small;
+    }
 
-  .container-bottom p {
-      font-size: small;
-  }
+    .container-top p {
+        font-size: medium;
+    }
 
-  .container-top p {
-      font-size: medium;
-  }
-  #distance {
-    margin-top: -8 px;
-  }
+    .container-bottom {
+       margin-top: 20px;
+    }
 
-  #convert input[type="submit"] {
-    margin-top: 55px;
-  }
+    #distance {
+        margin-top: -8px;
+    }
+
+    #convert input[type="submit"] {
+        margin-top: 10px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    #designword {
+        margin-top: 30px;
+    }
 }
 
-/* Media Queries for 444px to 768px Screens */
-@media (min-width: 444px) and (max-width: 768px) {
-  .container-top, .container-bottom {
-      width: 85%;
-      padding: 15px;
-  }
+@media (min-width: 481px) and (max-width: 768px) {
+    h3 {
+        text-align: center;
+    }
 
-  #distance, #convert input[type="submit"] {
-      width: 100%;
-      font-size: 16px;
-      height: 40px;
-      gap: 5px;
-      
-  }
+    .container-bottom {
+        margin-top: 0;
+    }
 
-  form {
-      flex-direction: column;
-      gap: 15px;
-  }
+    #convert input[type="submit"] {
+        margin-top: 100px;
+    }
 
-  .container-bottom p {
-      font-size: small;
-  }
+    #designword {
+        margin-top: 50px;
+    }
+}
 
-  .container-top p {
-      font-size: smaller;
-  }
+@media (min-width: 481px) and (max-width: 531px) {
+    
+
+    #convert input[type="submit"] {
+        margin-top: 100px;
+    }
+
+    #designword {
+        margin-top: 70px;
+    }
 }
